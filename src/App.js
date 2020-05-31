@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
+
+import SettingsModal from './components/settings_modal/settings_modal_component';
+
+
 import Table from 'react-bootstrap/Table';
 // import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import FormControl from "react-bootstrap/FormControl";
 import InputGroup from "react-bootstrap/InputGroup";
+
 
 import {roundingNumber, weightAmounts} from './assets/weightAmounts.js';
 
@@ -53,7 +58,9 @@ function App() {
   //   .appendChild(input);
   // }
   return (
+
     <Container fluid className={"App"}>
+    <SettingsModal />
 
 
       <div className={"container-fluid"}>
